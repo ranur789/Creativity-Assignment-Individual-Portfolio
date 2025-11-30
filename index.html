@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landlord Reliability Scorecard | Ravneet Kaur Ranu</title>
+    <meta name="description" content="A portfolio project by Ravneet Kaur Ranu on solving rental market transparency issues.">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="logo">Reliability Scorecard</a>
+            <ul class="nav-links">
+                <li><a href="#intro">Introduction</a></li>
+                <li><a href="#research">Research</a></li>
+                <li><a href="#analysis">Analysis</a></li>
+                <li><a href="#solution">Solution</a></li>
+                <li><a href="#reflection">Reflection</a></li>
+            </ul>
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero" id="home">
+        <div class="hero-bg">
+            <img src="images/hero-bg.png" alt="Modern Apartment Building">
+            <div class="overlay"></div>
+        </div>
+        <div class="container hero-content">
+            <p class="subtitle">Creative Problem Solving Portfolio</p>
+            <h1>Landlord Reliability Scorecard</h1>
+            <p class="author">Prepared by: <strong>Ravneet Kaur Ranu</strong></p>
+            <a href="#intro" class="btn btn-primary">Explore the Journey <i class="fas fa-arrow-down"></i></a>
+        </div>
+    </header>
+
+    <!-- Introduction Section -->
+    <section id="intro" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Introduction</h2>
+                <div class="line"></div>
+            </div>
+            <div class="content-grid">
+                <div class="text-block">
+                    <p class="lead">It can be unexpectedly stressful to find safe and reliable housing as a student.</p>
+                    <p>I was just out of town when I went for some new digs near my college and I didn’t find anywhere close to my university. Many landlords who had initially validated my move-in later cancelled without warning. In one instance, I submitted all my required paperwork and was only one week from transferring when the landlord canceled without a clear explanation. It left me utterly adrift.</p>
+                    <p>These happened during a phase I was still thinking about: renters — especially students, and newcomers — had very little ownership over the housing process and lack protections. Listing platforms like Kijiji and Facebook Marketplace give you access to listings, but that does not provide any clear transparency about landlord action.</p>
+                    <div class="highlight-box">
+                        <p><strong>The Core Problem:</strong> Renting becomes an offer that appears to be a bet, where people have no hope things will go right.</p>
+                    </div>
+                </div>
+                <div class="image-block">
+                    <img src="images/problem.png" alt="Stressed student with paperwork">
+                    <p class="caption">The anxiety of uncertainty in the rental market.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Research Section -->
+    <section id="research" class="section bg-light">
+        <div class="container">
+            <div class="section-header">
+                <h2>Research</h2>
+                <div class="line"></div>
+            </div>
+            
+            <div class="research-grid">
+                <!-- Primary Research -->
+                <div class="card">
+                    <div class="card-icon"><i class="fas fa-user-friends"></i></div>
+                    <h3>Primary Research</h3>
+                    <h4>Empathy Interview</h4>
+                    <p>I interviewed another international student who recently sought housing. Her experiences mirrored mine:</p>
+                    <ul>
+                        <li>Official move-ins undone overnight.</li>
+                        <li>Unreliable communication.</li>
+                        <li>Landlords avoiding accountability.</li>
+                    </ul>
+                    <blockquote class="quote">
+                        "A wish for a service that displays actual information beforehand, not after purchasing something."
+                    </blockquote>
+                </div>
+
+                <!-- Secondary Research -->
+                <div class="card">
+                    <div class="card-icon"><i class="fas fa-newspaper"></i></div>
+                    <h3>Secondary Research</h3>
+                    <h4>Market Analysis</h4>
+                    <p>News articles, reports, and social media forums confirmed this is a systemic issue:</p>
+                    <ul>
+                        <li><strong>CBC News:</strong> Dramatic upsurge in rental scams and last-minute cancellations.</li>
+                        <li><strong>Reddit Forums:</strong> Students experiencing surprise cancellations.</li>
+                        <li><strong>Systemic Issue:</strong> Lack of transparency creates a power imbalance.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Analysis Section -->
+    <section id="analysis" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Analysis</h2>
+                <div class="line"></div>
+            </div>
+
+            <div class="analysis-content">
+                <h3>Root Cause Analysis (Fishbone)</h3>
+                <p class="desc">Breaking down the problem of last-minute cancellations and renter uncertainty.</p>
+                
+                <div class="fishbone-grid">
+                    <div class="cause-item">
+                        <h4><i class="fas fa-info-circle"></i> Information Gaps</h4>
+                        <p>No verified landlord history. No dispute tracking.</p>
+                    </div>
+                    <div class="cause-item">
+                        <h4><i class="fas fa-chart-line"></i> Market Pressure</h4>
+                        <p>High demand, low supply. Rushed decisions.</p>
+                    </div>
+                    <div class="cause-item">
+                        <h4><i class="fas fa-desktop"></i> Platform Limitations</h4>
+                        <p>No verification on Kijiji/FB. No rating systems.</p>
+                    </div>
+                    <div class="cause-item">
+                        <h4><i class="fas fa-gavel"></i> Policy Weaknesses</h4>
+                        <p>Limited protections. Weak enforcement.</p>
+                    </div>
+                    <div class="cause-item">
+                        <h4><i class="fas fa-user-times"></i> Landlord Behavior</h4>
+                        <p>Double-booking. Ghosting. Last-minute cancels.</p>
+                    </div>
+                    <div class="cause-item">
+                        <h4><i class="fas fa-wallet"></i> Tenant Constraints</h4>
+                        <p>Tight timelines. Financial vulnerability.</p>
+                    </div>
+                </div>
+
+                <div class="pov-box">
+                    <h3>Point of View Statement</h3>
+                    <p>“Tenants have a need for a transparent and trustworthy way to check landlords’ behavior and reliability before agreeing to a rental contract, as they are able to avoid last-minute cancellations and unsafe or unstable housing situations.”</p>
+                </div>
+
+                <div class="hmw-box">
+                    <h3>Final HMW Question</h3>
+                    <p class="highlight-text">“How might we surface a landlord’s verified reliability history in one trustworthy snapshot at the moment of decision?”</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ideation Section -->
+    <section id="ideation" class="section bg-dark text-white">
+        <div class="container">
+            <div class="section-header">
+                <h2>Ideation</h2>
+                <div class="line bg-white"></div>
+            </div>
+            <p class="text-center">From 30 divergent ideas to one focused solution.</p>
+            
+            <div class="process-steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h4>Divergent Thinking</h4>
+                    <p>Brainstormed 30 unique ideas including transparency tools, blockchain verification, and AI summaries.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h4>Convergent Thinking</h4>
+                    <p>Used a Decision Matrix to evaluate ideas based on feasibility, impact, and innovation.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h4>Selection</h4>
+                    <p><strong>Landlord Reliability Scorecard</strong> was chosen for the highest balance of feasibility and impact.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solution Section -->
+    <section id="solution" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>The Solution</h2>
+                <div class="line"></div>
+            </div>
+
+            <div class="solution-showcase">
+                <div class="solution-text">
+                    <h3>Landlord Reliability Scorecard</h3>
+                    <p class="lead">A digital profile system that operates like a “credit score” for landlords.</p>
+                    
+                    <ul class="feature-list">
+                        <li>
+                            <span class="icon"><i class="fas fa-id-badge"></i></span>
+                            <div>
+                                <strong>Verified Identity Badge</strong>
+                                <p>Confirms government ID and property ownership to prevent scams.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="icon"><i class="fas fa-tachometer-alt"></i></span>
+                            <div>
+                                <strong>Reliability Score (0–100)</strong>
+                                <p>Based on cancellation rates, response time, and behavior patterns.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="icon"><i class="fas fa-history"></i></span>
+                            <div>
+                                <strong>Cancellation Tracking</strong>
+                                <p>Records and flags repeat offenders.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="icon"><i class="fas fa-robot"></i></span>
+                            <div>
+                                <strong>AI Review Summaries</strong>
+                                <p>Provides one-click clarity instead of overwhelming lists.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="icon"><i class="fas fa-traffic-light"></i></span>
+                            <div>
+                                <strong>Risk Indicator</strong>
+                                <p>Green (Reliable), Yellow (Mixed), Red (High Risk).</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="solution-visual">
+                    <!-- Placeholder for solution visual or the 3rd image if it worked -->
+                    <div class="mockup-card">
+                        <div class="mockup-header">
+                            <div class="avatar"></div>
+                            <div class="info">
+                                <div class="name">John Doe</div>
+                                <div class="badge verified"><i class="fas fa-check-circle"></i> Verified Landlord</div>
+                            </div>
+                            <div class="score green">98/100</div>
+                        </div>
+                        <div class="mockup-body">
+                            <div class="stat">
+                                <label>Response Time</label>
+                                <div class="bar"><div class="fill" style="width: 95%"></div></div>
+                            </div>
+                            <div class="stat">
+                                <label>Cancellations</label>
+                                <div class="value">0 in last 12 mo.</div>
+                            </div>
+                            <div class="review-summary">
+                                <p>"Consistent, reliable, and quick to respond."</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reflection Section -->
+    <section id="reflection" class="section bg-light">
+        <div class="container">
+            <div class="section-header">
+                <h2>Reflection</h2>
+                <div class="line"></div>
+            </div>
+            
+            <div class="reflection-content">
+                <p>This whole creative problem-solving cycle taught me about structured creativity translating personal frustration into an innovation opportunity. It’s a stress-ridden experience and housing has soon crystallized itself into a design challenge that centers on empathy, research, and analysis.</p>
+                <p>Performing an empathy interview was one of the most illuminating interventions. Hearing people’s complaints and frustrations validated that the issue was valid, emotional, and widespread. When I listened to other people saying it, it made me realize that creativity should always start with understanding people, and never jump on to solving problems.</p>
+                <p>The final concept—the Landlord Reliability Scorecard—is all what I understand: empathy, creativity, systemic analysis, understanding of a larger narrative, thinking about the full humanity. If it worked, this solution could put thousands of people in a better spot to rent, one way or another.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Ravneet Kaur Ranu. All Rights Reserved.</p>
+            <p class="course-info">Course: Creative Problem Solving</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
