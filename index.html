@@ -142,62 +142,97 @@
                 <h3>Root Cause Analysis (Fishbone)</h3>
                 <p class="desc">Visualizing the root causes of last-minute cancellations and renter uncertainty.</p>
 
-                <!-- Visual Fishbone Diagram -->
-                <div class="fishbone-container">
-                    <div class="fishbone-head">
-                        <div class="problem-box">
-                            Last-Minute Cancellations & Renter Uncertainty
-                        </div>
-                    </div>
-                    <div class="fishbone-spine"></div>
+                <!-- Visual Fishbone Diagram (SVG) -->
+                <div class="fishbone-svg-container">
+                    <svg viewBox="0 0 800 400" xmlns="http://www.w3.org/2000/svg">
+                        <!-- Styles -->
+                        <style>
+                            .fish-text {
+                                font-family: 'Inter', sans-serif;
+                                fill: #333;
+                            }
 
-                    <div class="fishbone-ribs top">
-                        <div class="rib">
-                            <div class="rib-line"></div>
-                            <div class="cause-box">
-                                <h4>Information Gaps</h4>
-                                <p>No verified history. No dispute tracking.</p>
-                            </div>
-                        </div>
-                        <div class="rib">
-                            <div class="rib-line"></div>
-                            <div class="cause-box">
-                                <h4>Platform Limitations</h4>
-                                <p>No verification. No rating systems.</p>
-                            </div>
-                        </div>
-                        <div class="rib">
-                            <div class="rib-line"></div>
-                            <div class="cause-box">
-                                <h4>Landlord Behavior</h4>
-                                <p>Double-booking. Ghosting.</p>
-                            </div>
-                        </div>
-                    </div>
+                            .fish-header {
+                                font-weight: bold;
+                                font-size: 14px;
+                                fill: #0f4c75;
+                            }
 
-                    <div class="fishbone-ribs bottom">
-                        <div class="rib">
-                            <div class="rib-line"></div>
-                            <div class="cause-box">
-                                <h4>Market Pressure</h4>
-                                <p>High demand. Rushed decisions.</p>
-                            </div>
-                        </div>
-                        <div class="rib">
-                            <div class="rib-line"></div>
-                            <div class="cause-box">
-                                <h4>Policy Weaknesses</h4>
-                                <p>Limited protections. Weak enforcement.</p>
-                            </div>
-                        </div>
-                        <div class="rib">
-                            <div class="rib-line"></div>
-                            <div class="cause-box">
-                                <h4>Tenant Constraints</h4>
-                                <p>Tight timelines. Financial vulnerability.</p>
-                            </div>
-                        </div>
-                    </div>
+                            .fish-sub {
+                                font-size: 12px;
+                                fill: #666;
+                            }
+
+                            .fish-spine {
+                                stroke: #0f4c75;
+                                stroke-width: 4;
+                                stroke-linecap: round;
+                            }
+
+                            .fish-rib {
+                                stroke: #3282b8;
+                                stroke-width: 2;
+                            }
+
+                            .fish-head {
+                                fill: #dc3545;
+                                rx: 10;
+                            }
+
+                            .fish-head-text {
+                                fill: white;
+                                font-weight: bold;
+                                font-size: 16px;
+                                text-anchor: middle;
+                            }
+                        </style>
+
+                        <!-- Spine -->
+                        <line x1="50" y1="200" x2="600" y2="200" class="fish-spine" />
+
+                        <!-- Head (Problem) -->
+                        <rect x="600" y="150" width="180" height="100" class="fish-head" />
+                        <text x="690" y="190" class="fish-text fish-head-text">Last-Minute</text>
+                        <text x="690" y="210" class="fish-text fish-head-text">Cancellations</text>
+                        <text x="690" y="230" class="fish-text fish-head-text">& Uncertainty</text>
+
+                        <!-- Top Ribs -->
+                        <!-- Rib 1: Information Gaps -->
+                        <line x1="150" y1="200" x2="100" y2="50" class="fish-rib" />
+                        <text x="100" y="40" class="fish-text fish-header" text-anchor="middle">Information Gaps</text>
+                        <text x="100" y="25" class="fish-text fish-sub" text-anchor="middle">No verified history</text>
+
+                        <!-- Rib 2: Platform Limitations -->
+                        <line x1="300" y1="200" x2="250" y2="50" class="fish-rib" />
+                        <text x="250" y="40" class="fish-text fish-header" text-anchor="middle">Platform
+                            Limitations</text>
+                        <text x="250" y="25" class="fish-text fish-sub" text-anchor="middle">No
+                            verification/ratings</text>
+
+                        <!-- Rib 3: Landlord Behavior -->
+                        <line x1="450" y1="200" x2="400" y2="50" class="fish-rib" />
+                        <text x="400" y="40" class="fish-text fish-header" text-anchor="middle">Landlord Behavior</text>
+                        <text x="400" y="25" class="fish-text fish-sub"
+                            text-anchor="middle">Ghosting/Double-booking</text>
+
+                        <!-- Bottom Ribs -->
+                        <!-- Rib 4: Market Pressure -->
+                        <line x1="150" y1="200" x2="100" y2="350" class="fish-rib" />
+                        <text x="100" y="370" class="fish-text fish-header" text-anchor="middle">Market Pressure</text>
+                        <text x="100" y="385" class="fish-text fish-sub" text-anchor="middle">High demand/Rushed</text>
+
+                        <!-- Rib 5: Policy Weaknesses -->
+                        <line x1="300" y1="200" x2="250" y2="350" class="fish-rib" />
+                        <text x="250" y="370" class="fish-text fish-header" text-anchor="middle">Policy
+                            Weaknesses</text>
+                        <text x="250" y="385" class="fish-text fish-sub" text-anchor="middle">Weak enforcement</text>
+
+                        <!-- Rib 6: Tenant Constraints -->
+                        <line x1="450" y1="200" x2="400" y2="350" class="fish-rib" />
+                        <text x="400" y="370" class="fish-text fish-header" text-anchor="middle">Tenant
+                            Constraints</text>
+                        <text x="400" y="385" class="fish-text fish-sub" text-anchor="middle">Tight timelines</text>
+                    </svg>
                 </div>
 
                 <div class="pov-box">

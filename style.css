@@ -318,121 +318,19 @@ img {
 }
 
 /* Analysis - Fishbone Diagram */
-.fishbone-container {
-    position: relative;
+.fishbone-svg-container {
     max-width: 900px;
-    margin: 60px auto;
-    padding: 20px 0;
-    overflow-x: auto;
-    /* For smaller screens */
-}
-
-.fishbone-spine {
-    height: 4px;
-    background-color: var(--primary-color);
-    width: 100%;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    z-index: 1;
-}
-
-.fishbone-head {
-    position: absolute;
-    right: -20px;
-    top: 50%;
-    transform: translateY(-50%);
-    z-index: 2;
-}
-
-.problem-box {
-    background-color: var(--danger-color);
-    color: #fff;
-    padding: 15px 25px;
-    border-radius: 8px;
-    font-weight: 700;
-    text-align: center;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-    width: 200px;
-}
-
-.fishbone-ribs {
-    display: flex;
-    justify-content: space-between;
-    width: 80%;
-    /* Leave space for head */
-    position: relative;
-    z-index: 2;
-}
-
-.fishbone-ribs.top {
-    margin-bottom: 40px;
-    align-items: flex-end;
-}
-
-.fishbone-ribs.bottom {
-    margin-top: 40px;
-    align-items: flex-start;
-}
-
-.rib {
-    position: relative;
-    width: 30%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.fishbone-ribs.top .rib {
-    flex-direction: column-reverse;
-}
-
-.rib-line {
-    width: 2px;
-    height: 60px;
-    background-color: var(--secondary-color);
-    margin: 10px 0;
-    position: relative;
-}
-
-/* Angled lines effect */
-.fishbone-ribs.top .rib-line {
-    transform: skewX(-30deg);
-    transform-origin: bottom;
-}
-
-.fishbone-ribs.bottom .rib-line {
-    transform: skewX(30deg);
-    transform-origin: top;
-}
-
-.cause-box {
+    margin: 40px auto;
     background: #fff;
-    padding: 15px;
-    border: 1px solid #eee;
-    border-radius: 5px;
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
-    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.fishbone-svg-container svg {
     width: 100%;
-    transition: var(--transition);
-}
-
-.cause-box:hover {
-    transform: scale(1.05);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-    border-color: var(--secondary-color);
-}
-
-.cause-box h4 {
-    font-size: 0.9rem;
-    margin-bottom: 5px;
-    color: var(--primary-color);
-}
-
-.cause-box p {
-    font-size: 0.8rem;
-    margin-bottom: 0;
-    color: #666;
+    height: auto;
+    overflow: visible;
 }
 
 .pov-box,
@@ -685,53 +583,6 @@ img {
     margin-bottom: 0;
 }
 
-/* Responsive Fishbone */
-@media (max-width: 768px) {
-    .fishbone-container {
-        padding: 0;
-        margin: 40px 0;
-    }
-
-    .fishbone-spine,
-    .fishbone-head {
-        display: none;
-    }
-
-    .fishbone-ribs {
-        width: 100%;
-        flex-direction: column;
-        gap: 20px;
-    }
-
-    .fishbone-ribs.top,
-    .fishbone-ribs.bottom {
-        margin: 0;
-    }
-
-    .rib {
-        width: 100%;
-        flex-direction: row;
-        align-items: center;
-        gap: 15px;
-    }
-
-    .fishbone-ribs.top .rib {
-        flex-direction: row;
-    }
-
-    .rib-line {
-        display: none;
-    }
-
-    .cause-box {
-        text-align: left;
-    }
-
-    .features-grid {
-        grid-template-columns: 1fr;
-    }
-}
-
 /* Reflection */
 .reflection-content {
     max-width: 800px;
@@ -778,6 +629,10 @@ footer {
 
     .content-grid,
     .solution-showcase {
+        grid-template-columns: 1fr;
+    }
+
+    .features-grid {
         grid-template-columns: 1fr;
     }
 
